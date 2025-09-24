@@ -1,0 +1,29 @@
+# Users can create a conda environment using this file or just install geospatial library through this link: https://pypi.org/project/geospatial/#description
+name: geospatial_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Core Python
+  - python=3.13
+  - pip
+
+  # Geospatial libraries
+  - gdal
+  - rasterio
+  - rioxarray
+  - xarray
+
+  # Data manipulation
+  - numpy
+  - pandas
+
+  # Machine learning
+  - scikit-learn
+
+  # Plotting
+  - matplotlib
+
+  # Optional: Jupyter support (if running interactively)
+  - jupyter
+  - ipykernel
